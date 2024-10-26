@@ -39,7 +39,7 @@ if __name__ == "__main__":
     rule_id_1 = test_create_rule(rule_string_1)
 
     # Create Rule 2
-    rule_string_2 = "(salary > 50000 OR experience > 5)"
+    rule_string_2 = "(salary > 20000 OR experience > 5)"
     rule_id_2 = test_create_rule(rule_string_2)
 
     # Combine Rules
@@ -50,7 +50,7 @@ if __name__ == "__main__":
         "age": 35,
         "department": "Sales",
         "salary": 60000,
-        "experience": 6
+        "experience": 3
     }
     test_evaluate_rule(combined_rule_id, data)
 
